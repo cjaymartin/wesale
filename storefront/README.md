@@ -8,6 +8,8 @@ The complete, paste-ready store package. Stack: **Shopify Basic (promo) + Shopif
 | [`catalog.md`](catalog.md) | All 7 products + the $59 hero kit: titles, descriptions, bullets, SEO, variants, pricing. Paste into Shopify. |
 | [`pages/`](pages/) | Homepage section plan + policy pages (shipping, returns, FAQ, about, contact/privacy/terms). |
 | [`setup-checklist.md`](setup-checklist.md) | Step-by-step Shopify build + go-live checklist with time/cost per step. **Start here to build.** |
+| [`shopify-setup-walkthrough.md`](shopify-setup-walkthrough.md) | Click-level, from-zero Shopify walkthrough (account → theme → domain → products → go-live). |
+| **[`NoseyMutt-Shopify-Setup-Guide.docx`](NoseyMutt-Shopify-Setup-Guide.docx)** | 📄 **The walkthrough as a readable Word document** — open/print this to follow along. |
 | [`preview/index.html`](preview/index.html) | Visual mockup of the hero kit page — **open in a browser** to see the design. |
 
 ## How to use
