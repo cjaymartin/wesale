@@ -19,6 +19,8 @@
 |---|---|---|---|---|
 | — | (no spend yet) | $0.00 | $0.00 | $500.00 |
 
+**Next planned spend — pending CEO go:** sample order ~$35–50, anchored by one CJdropshipping same-warehouse consolidated-kit order (~$18–26) that doubles as the lick-mat + snuffle + bowl samples AND proves the single-parcel claim + real US ETA. Storefront/automation spine = Shopify Basic promo (~$1/mo) + DSers Free ($0/mo); no paid builder or automation app pre-winner.
+
 ## Rules
 
 - No spend in Phase 0 (research). Money starts only after a niche + hero products are selected.

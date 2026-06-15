@@ -28,7 +28,9 @@ Find a profitable drop-ship niche, source reliable suppliers, stand up a storefr
 
 - **Phase:** 0 → 1 — niche selected, evolving into a branded set
 - **Budget remaining:** $500.00 / $500.00 (see [`finance/budget.md`](finance/budget.md))
-- **Direction:** Enrichment / Anti-Boredom Pet Brand — hero = slow-feeder dog bowl, anchoring an 8-SKU set; flagship "Boredom-Buster Starter Kit" $59 (~73% blended margin). Pending sample confirmation.
+- **Direction:** Enrichment / Anti-Boredom Pet Brand — hero = slow-feeder dog bowl; flagship "Boredom-Buster Starter Kit" $59 (~73% blended margin), sourced single-supplier from CJ to ship as one parcel.
+- **Storefront:** DIY Shopify Basic + DSers-free (own the store, $0 ongoing automation); paid "done-for-you" builders rejected.
+- **Next:** ~$35–50 sample order to confirm landed cost + single-parcel US ETA — pending CEO go.
 
 ## Roadmap
 
