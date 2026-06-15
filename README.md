@@ -26,9 +26,9 @@ Find a profitable drop-ship niche, source reliable suppliers, stand up a storefr
 
 ## Status
 
-- **Phase:** 0 → 1 — first research wave complete, selecting niche
+- **Phase:** 0 → 1 — niche selected, evolving into a branded set
 - **Budget remaining:** $500.00 / $500.00 (see [`finance/budget.md`](finance/budget.md))
-- **Provisional hero:** Slow-feeder / enrichment dog bowl (backup: car seat gap-filler organizer) — pending sample confirmation
+- **Direction:** Enrichment / Anti-Boredom Pet Brand — hero = slow-feeder dog bowl, anchoring an 8-SKU set; flagship "Boredom-Buster Starter Kit" $59 (~73% blended margin). Pending sample confirmation.
 
 ## Roadmap
 
