@@ -26,9 +26,9 @@ Find a profitable drop-ship niche, source reliable suppliers, stand up a storefr
 
 ## Status
 
-- **Phase:** 0 — Research & niche selection
+- **Phase:** 0 → 1 — first research wave complete, selecting niche
 - **Budget remaining:** $500.00 / $500.00 (see [`finance/budget.md`](finance/budget.md))
-- **Niche:** Not yet selected
+- **Provisional hero:** Slow-feeder / enrichment dog bowl (backup: car seat gap-filler organizer) — pending sample confirmation
 
 ## Roadmap
 

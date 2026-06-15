@@ -31,3 +31,7 @@ Decisions recorded as dated entries here as they're made.
 | Date | Decision | Rationale |
 |---|---|---|
 | 2026-06-15 | Repo + agent/research structure created; entered Phase 0 research. | Establish a tracked operating base before spending. |
+| 2026-06-15 | First research wave complete (niche, sourcing, storefront, marketing). | 4 agents produced sourced reports; see `research/` and `storefront/`. |
+| 2026-06-15 | **Provisional hero product: slow-feeder / enrichment dog bowl. Backup: car seat gap-filler organizer.** | Best margin (~70–83% gross) × supplier reliability, no IP/health-claim risk. Pending sample confirmation. |
+| 2026-06-15 | Storefront path: Shopify Basic (promo) + Shopify Payments; DSers/CJ for fulfillment. | ~$13 to go live, preserves ~$487 for ads/samples. |
+| 2026-06-15 | Marketing: Meta optimized for Add-to-Cart proxy event; bundle to lift AOV to ~$55–70. | Single-unit CAC doesn't close; AOV lift is a prerequisite, not an optimization. |
