@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NoseyMutt — Boredom-Buster Starter Kit (preview)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#2B2A28; --cream:#FBF6EE; --card:#fffdf8;
+    --mustard:#F2B33D; --clay:#E8674C; --sage:#7E9B6E;
+    --muted:#6f6a62; --line:#ece3d4;
+    --shadow:0 10px 30px rgba(43,42,40,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55}
+  h1,h2,h3,.logo,.btn{font-family:'Poppins',sans-serif}
+  img{max-width:100%}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  .preview-flag{background:var(--ink);color:#fbe9c8;text-align:center;font-size:12.5px;letter-spacing:.3px;padding:7px 12px}
+  .preview-flag b{color:var(--mustard)}
+
+  /* announcement + nav */
+  .announce{background:var(--clay);color:#fff;text-align:center;font-size:13.5px;font-weight:600;padding:9px}
+  header{position:sticky;top:0;z-index:20;background:rgba(251,246,238,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .logo{font-weight:800;font-size:23px;letter-spacing:-.5px;display:flex;align-items:center;gap:8px}
+  .logo .nose{width:26px;height:26px;background:var(--ink);border-radius:50%;display:inline-grid;place-items:center;color:var(--mustard);font-size:14px}
+  .nav nav{display:flex;gap:26px;font-weight:500;font-size:15px}
+  .nav nav a:hover{color:var(--clay)}
+  .cart{background:var(--ink);color:#fff;border-radius:999px;padding:9px 16px;font-size:14px;font-weight:600}
+  @media(max-width:760px){.nav nav{display:none}}
+
+  /* hero */
+  .hero{display:grid;grid-template-columns:1.05fr 1fr;gap:46px;align-items:center;padding:58px 0 40px}
+  .eyebrow{display:inline-block;background:#fff;border:1px solid var(--line);color:var(--sage);font-weight:700;font-size:12.5px;letter-spacing:.6px;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:18px}
+  .hero h1{font-size:46px;line-height:1.05;font-weight:800;letter-spacing:-1px}
+  .hero h1 span{color:var(--clay)}
+  .hero p.sub{font-size:18px;color:var(--muted);margin:18px 0 26px;max-width:30em}
+  .price{display:flex;align-items:baseline;gap:12px;margin-bottom:8px}
+  .price .now{font-family:'Poppins';font-weight:800;font-size:34px}
+  .price .was{color:var(--muted);text-decoration:line-through;font-size:19px}
+  .price .save{background:var(--mustard);color:var(--ink);font-weight:700;font-size:13px;padding:4px 10px;border-radius:999px}
+  .ship-note{font-size:14px;color:var(--sage);font-weight:600;margin-bottom:22px}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;border:0;cursor:pointer;font-weight:700;font-size:16px;padding:15px 28px;border-radius:14px}
+  .btn-primary{background:var(--clay);color:#fff;box-shadow:0 8px 20px rgba(232,103,76,.32)}
+  .btn-primary:hover{transform:translateY(-1px)}
+  .btn-ghost{background:transparent;border:1.5px solid var(--ink);color:var(--ink)}
+  .trust-mini{display:flex;gap:18px;margin-top:22px;font-size:13.5px;color:var(--muted);flex-wrap:wrap}
+  .trust-mini span{display:flex;align-items:center;gap:6px}
+
+  /* hero visual */
+  .hero-card{background:linear-gradient(160deg,#fff,#fef3df);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow);padding:26px;position:relative}
+  .hero-card .big{aspect-ratio:1/.86;border-radius:18px;background:
+     radial-gradient(circle at 30% 30%, #fde7bd, transparent 60%),
+     radial-gradient(circle at 75% 70%, #f6d2b0, transparent 55%),
+     #fbe6cf;display:grid;place-items:center;font-size:96px}
+  .kit-thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+  .thumb{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 8px;text-align:center}
+  .thumb .ic{font-size:30px}
+  .thumb b{display:block;font-size:12.5px;margin-top:4px;font-family:'Poppins';font-weight:600}
+  .thumb small{color:var(--muted);font-size:11px}
+  .tag{position:absolute;top:-14px;right:18px;background:var(--sage);color:#fff;font-family:'Poppins';font-weight:700;font-size:13px;padding:8px 14px;border-radius:999px;box-shadow:var(--shadow)}
+  @media(max-width:860px){.hero{grid-template-columns:1fr;padding-top:36px}.hero h1{font-size:38px}}
+
+  /* problem strip */
+  .strip{background:var(--ink);color:#f3ece0;padding:40px 0;margin-top:18px}
+  .strip .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .strip h3{font-size:17px;color:#fff;margin-bottom:4px}
+  .strip .ic{font-size:30px;margin-bottom:8px}
+  .strip p{color:#c9bfae;font-size:14.5px}
+  .strip .arrow{color:var(--mustard);font-weight:700;font-size:13px;margin-top:8px;display:inline-block}
+  @media(max-width:760px){.strip .grid{grid-template-columns:1fr;gap:20px}}
+
+  /* whats inside */
+  section.block{padding:64px 0}
+  .h2c{text-align:center;max-width:32em;margin:0 auto 40px}
+  .h2c h2{font-size:34px;font-weight:800;letter-spacing:-.5px}
+  .h2c p{color:var(--muted);margin-top:10px;font-size:16.5px}
+  .cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .pcard{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:var(--shadow)}
+  .pcard .ic{font-size:42px}
+  .pcard h3{font-size:19px;margin:14px 0 6px}
+  .pcard p{color:var(--muted);font-size:14.5px}
+  @media(max-width:760px){.cards3{grid-template-columns:1fr}}
+
+  /* why band */
+  .why{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .why .cards3 .pcard{background:transparent;border:0;box-shadow:none;padding:14px}
+  .why .pcard .ic{color:var(--clay)}
+
+  /* reviews */
+  .rev{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .qcard{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+  .stars{color:var(--mustard);font-size:16px;letter-spacing:2px}
+  .qcard p{font-size:14.5px;margin:10px 0}
+  .qcard b{font-size:13.5px}
+  .qcard .ph{font-size:11.5px;color:var(--muted);font-style:italic}
+  @media(max-width:760px){.rev{grid-template-columns:1fr}}
+
+  /* guarantee */
+  .guar{background:var(--mustard);border-radius:24px;padding:42px;text-align:center;margin:10px 0}
+  .guar h2{font-size:30px;font-weight:800}
+  .guar p{max-width:34em;margin:12px auto 0;color:#5c4a20;font-weight:500}
+
+  footer{background:var(--ink);color:#cfc6b8;padding:48px 0 30px;margin-top:10px}
+  footer .cols{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+  footer .logo{color:#fff;margin-bottom:10px}
+  footer a{display:block;color:#cfc6b8;font-size:14px;padding:4px 0}
+  footer a:hover{color:var(--mustard)}
+  footer h4{color:#fff;font-family:'Poppins';font-size:14px;margin-bottom:8px;letter-spacing:.3px}
+  .fineprint{border-top:1px solid #3a3833;margin-top:28px;padding-top:18px;font-size:12.5px;color:#8c8478;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+  <div class="preview-flag">🔧 <b>STATIC PREVIEW</b> — this is a design mockup of the NoseyMutt hero page, not the live store. Copy lives in <b>storefront/catalog.md</b>. Build in Shopify via <b>storefront/setup-checklist.md</b>.</div>
+
+  <div class="announce">🐽 Free US shipping over $35 · 30-day happy-dog guarantee</div>
+
+  <header>
+    <div class="wrap nav">
+      <div class="logo"><span class="nose">🐽</span> NoseyMutt</div>
+      <nav>
+        <a href="#">Shop</a>
+        <a href="#whats-inside">Starter Kit</a>
+        <a href="#why">Why Enrichment</a>
+        <a href="#">About</a>
+      </nav>
+      <a class="cart" href="#">Cart · 0</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <span class="eyebrow">⭐ Best-seller · The Starter Kit</span>
+        <h1>Keep their nose busy,<br><span>their brain happy.</span></h1>
+        <p class="sub">Everything your dog needs to eat slower, sniff more, and stop wrecking the house out of boredom — in one box.</p>
+        <div class="price">
+          <span class="now">$59</span>
+          <span class="was">$69</span>
+          <span class="save">SAVE $10</span>
+        </div>
+        <div class="ship-note">✓ In stock · Ships in one box · Free US shipping</div>
+        <div class="cta-row">
+          <button class="btn btn-primary">Add the Starter Kit — $59</button>
+          <a class="btn btn-ghost" href="#whats-inside">See what's inside</a>
+        </div>
+        <div class="trust-mini">
+          <span>🥣 Slows fast eaters</span>
+          <span>🧠 Busts boredom</span>
+          <span>🧼 Dishwasher-friendly</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <span class="tag">3-in-1 kit</span>
+        <div class="big">🐕‍🦺🥣</div>
+        <div class="kit-thumbs">
+          <div class="thumb"><div class="ic">🥣</div><b>Slow Feeder</b><small>Bowl</small></div>
+          <div class="thumb"><div class="ic">👅</div><b>Lick Mat</b><small>Calm-down</small></div>
+          <div class="thumb"><div class="ic">🐽</div><b>Snuffle Toy</b><small>Foraging</small></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PROBLEM STRIP -->
+  <section class="strip">
+    <div class="wrap grid">
+      <div>
+        <div class="ic">🍽️</div>
+        <h3>Inhales dinner in 9 seconds</h3>
+        <p>Gulping leads to bloat and a still-hungry, still-restless dog.</p>
+        <span class="arrow">→ The Slow-Feeder Bowl</span>
+      </div>
+      <div>
+        <div class="ic">🛋️</div>
+        <h3>Bored &amp; wrecking the house</h3>
+        <p>Chewing, barking, and digging are a brain begging for a job.</p>
+        <span class="arrow">→ The Snuffle Toy</span>
+      </div>
+      <div>
+        <div class="ic">😬</div>
+        <h3>Can't relax for baths or alone-time</h3>
+        <p>A licking session settles the wiggliest, most anxious pups.</p>
+        <span class="arrow">→ The Lick Mat</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHATS INSIDE -->
+  <section class="block wrap" id="whats-inside">
+    <div class="h2c">
+      <h2>Three ways to bust the boredom</h2>
+      <p>Each piece gives your dog's nose and brain a real job. Together, they're a full enrichment system.</p>
+    </div>
+    <div class="cards3">
+      <div class="pcard">
+        <div class="ic">🥣</div>
+        <h3>Slow-Feeder Bowl</h3>
+        <p>Turns a 9-second gulp-fest into a 9-minute puzzle. Easier on the tummy, harder on the boredom. Lightweight, non-slip, dishwasher-friendly — never ceramic.</p>
+      </div>
+      <div class="pcard">
+        <div class="ic">👅</div>
+        <h3>Calm-Down Lick Mat</h3>
+        <p>Smear on peanut butter, stick it to the wall, and buy yourself a calm 15 minutes for bath time, nail trims, and Zoom calls. Freezer-friendly to last longer.</p>
+      </div>
+      <div class="pcard">
+        <div class="ic">🐽</div>
+        <h3>Snuffle Foraging Toy</h3>
+        <p>Hide the kibble and let their nose do what it was born to do. Ten minutes of sniffing tires a dog out more than a long walk. Machine-washable, folds flat.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="why block" id="why">
+    <div class="wrap">
+      <div class="h2c"><h2>Why enrichment works</h2><p>A busy nose makes a calm dog. No gimmicks, no medical promises — just smart play.</p></div>
+      <div class="cards3">
+        <div class="pcard"><div class="ic">👃</div><h3>Sniffing tires dogs out</h3><p>Ten minutes of foraging burns more mental energy than a long walk.</p></div>
+        <div class="pcard"><div class="ic">🌀</div><h3>Slower eating, happier tummy</h3><p>No more gulp-and-bloat at dinnertime.</p></div>
+        <div class="pcard"><div class="ic">🛋️</div><h3>A busy dog is a calm dog</h3><p>Less boredom means less chewing, barking, and digging.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS (placeholder) -->
+  <section class="block wrap">
+    <div class="h2c"><h2>Loved by nosey mutts everywhere</h2><p style="color:var(--clay);font-weight:600">⚠️ Placeholder — seed with real photos/reviews from your sample order. Never fabricate reviews.</p></div>
+    <div class="rev">
+      <div class="qcard"><div class="stars">★★★★★</div><p>"My lab used to inhale dinner. Now mealtime actually takes him a few minutes and he's way calmer after."</p><b>Sample R.</b> <span class="ph">— example placeholder</span></div>
+      <div class="qcard"><div class="stars">★★★★★</div><p>"The lick mat is a lifesaver for nail trims. Stick it to the tub and she forgets I'm even there."</p><b>Sample T.</b> <span class="ph">— example placeholder</span></div>
+      <div class="qcard"><div class="stars">★★★★★</div><p>"Snuffle toy = a tired puppy. Ten minutes of sniffing and he naps. Worth every penny."</p><b>Sample M.</b> <span class="ph">— example placeholder</span></div>
+    </div>
+  </section>
+
+  <!-- GUARANTEE -->
+  <section class="wrap">
+    <div class="guar">
+      <h2>The 30-Day Happy-Dog Guarantee 🐾</h2>
+      <p>If your dog isn't more entertained — or anything arrives wrong — email us a photo and we'll replace it or refund you. Usually no return needed.</p>
+    </div>
+  </section>
+
+  <section class="block wrap" style="text-align:center;padding-top:20px">
+    <button class="btn btn-primary" style="font-size:18px;padding:18px 40px">Get the Boredom-Buster Starter Kit — $59</button>
+    <div class="ship-note" style="justify-content:center;margin-top:14px">✓ Free US shipping · Ships in one box · 30-day guarantee</div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="cols">
+        <div style="max-width:260px">
+          <div class="logo"><span class="nose">🐽</span> NoseyMutt</div>
+          <p style="font-size:14px">Keep their nose busy, their brain happy. Enrichment gear for the gloriously bored dog.</p>
+        </div>
+        <div><h4>Shop</h4><a href="#">Starter Kit</a><a href="#">Slow Feeder</a><a href="#">Lick Mat</a><a href="#">Snuffle Toy</a></div>
+        <div><h4>Help</h4><a href="#">Shipping</a><a href="#">Returns</a><a href="#">FAQ</a><a href="#">Contact</a></div>
+        <div><h4>Company</h4><a href="#">About</a><a href="#">Privacy</a><a href="#">Terms</a><a href="#">@noseymutt</a></div>
+      </div>
+      <div class="fineprint">
+        <span>© 2026 NoseyMutt. All rights reserved.</span>
+        <span>hello@noseymutt.com</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

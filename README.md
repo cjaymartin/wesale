@@ -26,11 +26,11 @@ Find a profitable drop-ship niche, source reliable suppliers, stand up a storefr
 
 ## Status
 
-- **Phase:** 0 → 1 — niche selected, evolving into a branded set
+- **Phase:** 1 — brand chosen (**NoseyMutt**), MVP store package built, ready to assemble in Shopify
 - **Budget remaining:** $500.00 / $500.00 (see [`finance/budget.md`](finance/budget.md))
-- **Direction:** Enrichment / Anti-Boredom Pet Brand — hero = slow-feeder dog bowl; flagship "Boredom-Buster Starter Kit" $59 (~73% blended margin), sourced single-supplier from CJ to ship as one parcel.
-- **Storefront:** DIY Shopify Basic + DSers-free (own the store, $0 ongoing automation); paid "done-for-you" builders rejected.
-- **Next:** ~$35–50 sample order to confirm landed cost + single-parcel US ETA — pending CEO go.
+- **Brand:** **NoseyMutt** (`noseymutt.com` available) — Enrichment / Anti-Boredom dog brand. Flagship "Boredom-Buster Starter Kit" $59 (~73% blended margin), sourced single-supplier from CJ to ship as one parcel.
+- **Storefront:** Full paste-ready package in [`storefront/`](storefront/) (brand, catalog+copy, policies, go-live checklist, browser preview). Stack: Shopify Basic + DSers/CJ.
+- **Next:** assemble the Shopify store from [`storefront/setup-checklist.md`](storefront/setup-checklist.md); place the ~$35–50 CJ sample order through it to confirm landed cost + ETA, then launch the ad test.
 
 ## Roadmap
 
