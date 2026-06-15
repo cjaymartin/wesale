@@ -30,7 +30,9 @@ Find a profitable drop-ship niche, source reliable suppliers, stand up a storefr
 - **Budget remaining:** $500.00 / $500.00 (see [`finance/budget.md`](finance/budget.md))
 - **Brand:** **NoseyMutt** (`noseymutt.com` available) — Enrichment / Anti-Boredom dog brand. Flagship "Boredom-Buster Starter Kit" $59 (~73% blended margin), sourced single-supplier from CJ to ship as one parcel.
 - **Storefront:** Full paste-ready package in [`storefront/`](storefront/) (brand, catalog+copy, policies, go-live checklist, browser preview). Stack: Shopify Basic + DSers/CJ.
-- **Next:** assemble the Shopify store from [`storefront/setup-checklist.md`](storefront/setup-checklist.md); place the ~$35–50 CJ sample order through it to confirm landed cost + ETA, then launch the ad test.
+- **From-zero guides ready:** [`storefront/shopify-setup-walkthrough.md`](storefront/shopify-setup-walkthrough.md) (no Shopify account needed yet) and [`marketing/meta-ads-setup-walkthrough.md`](marketing/meta-ads-setup-walkthrough.md) (no Meta account needed yet).
+- **Cheap traffic engine:** [`marketing/cheaper-channels.md`](marketing/cheaper-channels.md) (Pinterest, TikTok/Reels, gifting, email) + [`marketing/seo-strategy.md`](marketing/seo-strategy.md) (blog/SEO). Start these *before* paid ads.
+- **Next:** build the store (Shopify walkthrough) → start organic/SEO → place the CJ sample order through the live store → run the $90 Meta test.
 
 ## Roadmap
 
