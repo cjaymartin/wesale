@@ -1,0 +1,26 @@
+# Secrets & credentials — NEVER commit
+.env
+.env.*
+*.key
+*.pem
+secrets/
+credentials*.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Node (for eventual storefront code)
+node_modules/
+dist/
+build/
+.cache/
+npm-debug.log*
+yarn-error.log*
+
+# Data scratch
+*.tmp
+scratch/
