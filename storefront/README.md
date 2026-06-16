@@ -11,6 +11,7 @@ The complete, paste-ready store package. Stack: **Shopify Basic (promo) + Shopif
 | [`shopify-setup-walkthrough.md`](shopify-setup-walkthrough.md) | Click-level, from-zero Shopify walkthrough (account → theme → domain → products → go-live). |
 | **[`NoseyMutt-Shopify-Setup-Guide.docx`](NoseyMutt-Shopify-Setup-Guide.docx)** | 📄 **The walkthrough as a readable Word document** — open/print this to follow along. |
 | [`preview/index.html`](preview/index.html) | Visual mockup of the hero kit page — **open in a browser** to see the design. |
+| [`brand-assets/`](brand-assets/) | 🎨 Launch-ready **logo PNGs** (wordmark, light version, mark, favicon) to upload in Shopify. |
 
 ## How to use
 1. Skim [`brand.md`](brand.md) and open [`preview/index.html`](preview/index.html) to see the look.

@@ -23,7 +23,12 @@ Playful, warm, plain-spoken, a little cheeky. Talks to the dog parent as a frien
 - **Palette:** warm + friendly, high contrast for mobile + ad creative.
   - Ink `#2B2A28` (near-black brown) · Cream `#FBF6EE` (bg) · Mustard `#F2B33D` (primary/CTA) · Clay `#E8674C` (accent) · Sage `#7E9B6E` (secondary/trust)
 - **Type:** rounded, friendly sans (e.g. *Poppins* / *Quicksand* for headings, *Inter* for body — all free Google Fonts).
-- **Logo direction:** wordmark "NoseyMutt" with a simple nose/paw or sniffing-dog glyph dotting the "y" or as a standalone mark. Keep it 1-color-printable. (Cheap path: Hatchful/Canva/Looka free, or a $15 Fiverr wordmark — log any spend in `finance/budget.md`.)
+- **Logo:** ✅ provided in [`brand-assets/`](brand-assets/) — a "NoseyMutt" wordmark with a mustard nose-badge mark (Quicksand Bold).
+  - `logo-noseymutt.png` — primary wordmark (Ink text) for light/cream headers.
+  - `logo-noseymutt-light.png` — cream text for dark/Clay backgrounds (footer, announcement bar).
+  - `logo-mark.png` — the standalone nose badge.
+  - `favicon.png` — 512×512 browser-tab icon.
+  - All transparent PNGs, 1-color-printable mark. Replace with a custom logo later if desired.
 
 ## Naming inside the store
 - Brand: **NoseyMutt**

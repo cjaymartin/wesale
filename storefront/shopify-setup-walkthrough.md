@@ -33,8 +33,10 @@ Have all of this open/ready in browser tabs so you never get stuck mid-setup:
 5. **A debit/credit card** to pay the ~$1/mo Shopify charge and the domain (~$11).
 6. **A PayPal account email** (you'll create a PayPal Business account in Phase 8 — have a login
    ready or be ready to make one).
-7. **A logo file** (optional). Free path: Canva or Shopify's free logo maker. A simple
-   "NoseyMutt" wordmark is enough to launch. If you buy one on Fiverr (~$15), 💲 log it.
+7. **A logo file** — ✅ **already made for you** in [`storefront/brand-assets/`](brand-assets/):
+   `logo-noseymutt.png` (wordmark for the header), `logo-noseymutt-light.png` (cream text for the
+   dark footer), and `favicon.png` (browser-tab icon). Nothing to buy. You can replace them later
+   with a custom logo if you want, but these are launch-ready.
 8. **Product images** — start with clean supplier photos from CJ/AliExpress. Swap in your own
    photos once the sample order arrives (own photos convert better and are ad-safe).
 9. **This file, plus `catalog.md`, `brand.md`, and the `pages/` folder** open side-by-side so you
@@ -186,11 +188,11 @@ Have all of this open/ready in browser tabs so you never get stuck mid-setup:
    Poppins isn't listed) and **Body = Inter**. Click the font picker → search the name → select.
    These are free Google Fonts already bundled in Shopify's font library.
 6. **Add the logo.** Theme settings → **Logo** (sometimes under "Header"). Click **Select image**,
-   upload your NoseyMutt wordmark PNG (transparent background looks best). Set a sensible **logo
-   width** (~120–160px). If you have no logo yet, leave the text store name showing — you can add
-   the logo later.
-7. **Favicon** (the tiny browser-tab icon). Theme settings → **Favicon** → upload a small square
-   version of the logo/glyph (32×32 works).
+   upload **`storefront/brand-assets/logo-noseymutt.png`** (transparent background, ready to go).
+   Set a sensible **logo width** (~140–170px). *(For the dark footer, if Dawn lets you set a
+   separate footer logo, use `logo-noseymutt-light.png` so the text stays readable on Ink.)*
+7. **Favicon** (the tiny browser-tab icon). Theme settings → **Favicon** → upload
+   **`storefront/brand-assets/favicon.png`** (the nose mark; Shopify auto-resizes it).
 8. **Buttons / corners.** Theme settings → **Buttons** (or "Inputs"). A slightly **rounded** corner
    radius matches NoseyMutt's friendly, rounded brand. Keep it subtle.
 9. Click **Save** (top-right). Nothing is public yet — the store still has a password page
