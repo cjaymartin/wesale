@@ -72,7 +72,9 @@ def main():
     shop = env.get("SHOPIFY_STORE_DOMAIN", "")
     cid = env.get("SHOPIFY_CLIENT_ID", "")
     csecret = env.get("SHOPIFY_CLIENT_SECRET", "")
-    scopes = env.get("SHOPIFY_SCOPES", DEFAULT_SCOPES)
+    # If SHOPIFY_SCOPES is set, request exactly those; if blank, omit `scope` so the
+    # token inherits whatever scopes the app is configured with (safest with Dev Dashboard).
+    scopes = env.get("SHOPIFY_SCOPES", "").strip()
     bad = [k for k, v in {"SHOPIFY_STORE_DOMAIN": shop, "SHOPIFY_CLIENT_ID": cid,
                           "SHOPIFY_CLIENT_SECRET": csecret}.items()
            if not v or "PASTE" in v or v.startswith("your-")]
@@ -81,8 +83,9 @@ def main():
 
     state = secrets.token_hex(16)
     auth_url = (f"https://{shop}/admin/oauth/authorize?client_id={cid}"
-                f"&scope={urllib.parse.quote(scopes)}"
                 f"&redirect_uri={urllib.parse.quote(REDIRECT)}&state={state}")
+    if scopes:
+        auth_url += f"&scope={urllib.parse.quote(scopes)}"
 
     result = {}
 
