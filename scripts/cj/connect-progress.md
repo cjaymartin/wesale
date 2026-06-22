@@ -213,11 +213,27 @@ User approved: source US-shippable replacement for BOTH Snuffle and Rope, then c
   To offer rope colors later: CJ cache must refresh (retry Specific Sync after a longer wait), then
   re-add colors + connect.
 
+## ✅ Starter Kit — SOLVED via Shopify product bundle (2026-06-22)
+CJ has NO self-serve combined-product builder in this account. Instead used Shopify's native
+**productBundleCreate** (Admin API; store has bundles access) — the kit is now a real bundle:
+- handle `boredom-buster-starter-kit`, ACTIVE, $59 (compare $69), new product 8998736232602.
+- Components: Slow-Feeder Bowl (Green) + Calm-Down Lick Mat (Green) + Snuffle (×1 each).
+- Old placeholder kit product deleted; bundle took its handle/copy/SEO/collection; published.
+- Fulfillment: a kit purchase splits into the 3 component line items → CJ (connected to all 3)
+  auto-fulfills each. NO CJ connection needed on the bundle itself. (Verify with a test order at go-live.)
+
+## ❌ Rope variant cache — could NOT refresh; left single-color (Blue)
+- Re-added 4 colors in Shopify + tried Sync, Specific Sync, and disconnect. CJ will NOT refresh the
+  store-variant cache of an ALREADY-IMPORTED product (cache fixed at first import), and CJ's
+  connected-products management route (/products-connection/connected) is now "abandoned"/broken.
+- Reverted rope to single **Blue** (connected, fulfillable, safe). 
+- CLEAN FIX if rope colors wanted later: DELETE the rope-tug-toy Shopify product, recreate it fresh
+  (new product = no CJ cache) with the 4 colors, let CJ import, connect all 4. (~12 browser steps.)
+
 ## Remaining to finish launch
-1. Build CJ Combined product for the Starter Kit (bowl+lickmat+snuffle) → connect to the $59 kit.
-   (Kit still in CJ Unconnected list. Combined-product flow is separate from the per-product connect.)
-2. Go-live: select plan + add card, activate Payments, set shipping rates, remove store password.
-   (34zb0n-hp on 3-day trial.) Confirm with user before sensitive/irreversible steps.
+1. Go-live: select plan + add card, activate Payments, set shipping rates, remove store password.
+   (34zb0n-hp on 3-day trial.) Full checklist in storefront/go-live.md. Confirm before sensitive steps.
+2. (Optional) Rope colors via fresh-product rebuild (above). Verify kit bundle with a test order.
 
 - [ ] Slow Feeder Bowl
 - [ ] Calm-Down Lick Mat  (store pinned earlier)
